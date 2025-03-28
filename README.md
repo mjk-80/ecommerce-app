@@ -1,54 +1,23 @@
-# React + TypeScript + Vite
+# اپلیکیشن فروشگاهی (E-commerce App)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+این یک اپلیکیشن فروشگاهی ساده است که با استفاده از **React**، **TypeScript** و **Vite** ساخته شده است. این پروژه برای نمایش نحوه‌ی ساخت یک سایت فروشگاهی پاسخگو (Responsive) و کاربردی با استفاده از تکنولوژی‌های مدرن فرانت‌اند طراحی شده است.
 
-Currently, two official plugins are available:
+## راه‌اندازی پروژه
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+برای شروع کار با این پروژه، مراحل زیر را دنبال کنید:
 
-## Expanding the ESLint configuration
+### 1. کلون کردن مخزن
+پروژه را به ماشین محلی خود کلون کنید:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+```bash
+git clone https://github.com/username/my-ecommerce-app.git
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+###2.نصب وابستگی ها
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+cd my-ecommerce-app
+npm install
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+###3.اجرای پروژه
+npm run dev
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+حال پروژه شما در آدرس http://localhost:3000 در مرورگر قابل مشاهده خواهد بود.

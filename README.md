@@ -13,13 +13,13 @@
 git clone https://github.com/username/my-ecommerce-app.git
 ```
 
-###2.نصب وابستگی ها
+### 2.نصب وابستگی ها
 
 ```bash
 cd my-ecommerce-app
 npm install
 ```
-###3.اجرای پروژه
+### 3.اجرای پروژه
 
 ```bash
 npm run dev

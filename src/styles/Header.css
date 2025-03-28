@@ -1,0 +1,16 @@
+/* هدر */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* تنظیم padding برای قرار گرفتن درست در بالای صفحه */
+    background-color: #282c34;
+    color: white;
+    position: fixed; /* هدر همیشه در بالای صفحه باقی بمونه */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  

@@ -11,13 +11,17 @@
 
 ```bash
 git clone https://github.com/username/my-ecommerce-app.git
+```
 
 ###2.نصب وابستگی ها
 
+```bash
 cd my-ecommerce-app
 npm install
-
+```
 ###3.اجرای پروژه
-npm run dev
 
+```bash
+npm run dev
+```
 حال پروژه شما در آدرس http://localhost:3000 در مرورگر قابل مشاهده خواهد بود.
